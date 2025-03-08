@@ -13,6 +13,6 @@ provider "null" {
 
 resource "null_resource" "example" {
   provisioner "local-exec" {
-    command = "echo Hello from Null Provider!"
+    command = "echo Hello from Null Provider for the Testing!"
   }
 }
