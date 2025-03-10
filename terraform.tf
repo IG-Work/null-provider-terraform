@@ -12,7 +12,9 @@ provider "null" {
 }
 
 resource "null_resource" "example" {
+  count = 3
+
   provisioner "local-exec" {
-    command = "echo Hello from Null Provider for the Testing!"
+    command = "echo Hello from Null Provider with count index ${count.index}"
   }
 }
