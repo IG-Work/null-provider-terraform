@@ -7,6 +7,17 @@ terraform {
   }
 }
 
+data "terraform_remote_state" "test" {
+  backend = "remote"
+
+  config = {
+    organization = "test-yashi"
+    workspaces = {
+          name = "random-provider-terraform"
+    }
+  }
+}
+
 provider "null" {
 # we can add configurations here
 }
