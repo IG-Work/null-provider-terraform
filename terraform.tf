@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-data "terraform_remote_state" "test" {
+/*data "terraform_remote_state" "test" {
   backend = "remote"
 
   config = {
@@ -16,7 +16,7 @@ data "terraform_remote_state" "test" {
           name = "random-provider-terraform"
     }
   }
-}
+}*/
 
 provider "null" {
 # we can add configurations here
