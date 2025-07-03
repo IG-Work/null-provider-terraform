@@ -19,7 +19,7 @@ terraform {
 }*/
 
 provider "null" {
-# we can add configurations here
+# we can add configurations here for more
 }
 
 resource "null_resource" "example" {
